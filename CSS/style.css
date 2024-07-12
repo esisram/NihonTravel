@@ -1,6 +1,6 @@
 :root {
   --background-header: rgba(4, 9, 30, 0.7);
-  --text-primary-color: rgba(253, 247, 247, 0.2);
+  --text-primary-color: white;
   --text-secondary-color: rgb(221, 205, 205, 0.2);
 }
 * {
@@ -14,7 +14,7 @@ body {
   font-family: 'Poppins', sans-serif;
   font-style: normal;
 }
-.header {
+header {
   min-height: 100vh;
   width: 100%;
   background-image: url('https://media.timeout.com/images/105240237/image.jpg');
@@ -75,7 +75,7 @@ nav a {
   margin: 20px;
   font-size: 62px;
   font-style: italic;
-  color: tomato;
+  color: whitesmoke;
   letter-spacing: 5px;
   text-decoration: underline dotted blue;
 }
@@ -112,33 +112,8 @@ nav a {
   transition: ls;
 }
 
-@media screen and (max-width: 700px) {
-  .text-box h1 {
-    font-size: 20px;
-  }
-  .nav-links ul li {
-    display: block;
-  }
-  .nav-links ul li::after {
-    background: var(--text-primary-color);
-    display: block;
-  }
-  .nav-links ul li::after:hover {
-    width: 30%;
-  }
-  .nav-links {
-    position: absolute;
-    background: var(--background-header);
-    height: 100vh;
-    width: 200px;
-    top: 0;
-    right: 0;
-    text-align: left;
-    z-index: 2;
-  }
-}
 
-.main {
+main {
   min-height: 100vh;
   width: 100%;
   background-image: radial-gradient(var(--background-header), var(--background-header), var(--text-secondary-color)),
